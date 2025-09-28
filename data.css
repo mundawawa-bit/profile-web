@@ -1,0 +1,82 @@
+/* Background */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, #7f2e45, #b05a72, #690f16);
+}
+
+/* Tombol kembali */
+.back-button {
+  margin: 20px;
+}
+.back-button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
+}
+.back-button a:hover {
+  background: rgba(0,0,0,0.7);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.back-button a:active {
+  transform: scale(0.95);
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.675);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+th {
+  background: #d0778d;
+  color: white;
+  text-align: left;
+}
+
+/* List */
+.hobi li, .list li {
+  list-style: none;
+  background: #f9f9f9;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hobi li i, .list li i {
+  margin-right: 10px;
+}
+
+.hobi li:hover, .list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(142, 51, 51, 0.211);
+}
